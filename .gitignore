@@ -25,11 +25,11 @@
 *.la
 *.a
 *.lib
-
+ 
 # Executables
 *.exe
 *.out
 *.app
 
 # Visual Studio Project metadata
-*.vs
+.vs/
