@@ -1,0 +1,21 @@
+GDK:	GNOME Development Kit
+GNOME:	GNU Network Object Model Environment
+GNU:	GNU Not Unix
+GTK:	GNOME ToolKit
+Qt:		Quick toolkit
+WinJS:	Windows JavaScript
+JVM:	Java Virtual Machine
+SDK:	Software Development Kit
+COFF:	Common Object File Format
+OS:		Operating System
+RTOS:	Real Time Operating System
+IDE:	Integrated Development Environment
+VM:		Virtual Machine
+OpenGL:	Open Graphics Library
+OpenGL ES:	OpenGL for Embedded Systems
+MFC:	Microsoft Foundation Classes
+NDK:	Native Development Kit -> Used for Android S/W Dev
+LLVM:	Low Level Virtual Machine -> Example - Dalvik (Android)
+HLVM:	High Level Virtual Machine -> Example - JVM
+OpenCL:	Open Computing Language
+CUDA:	

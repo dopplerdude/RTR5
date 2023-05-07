@@ -1,0 +1,137 @@
+﻿16 April 2023:
+First triangle program practice done.
+
+==============================================================================================================
+L003 : 22 April 2023
+
+Group leaders got assigned project
+
+SDK (Software Development Kit):
+A] Toolchain : Compiler, Linker/Interpreter, Loader, assembler, disassembler, debugger
+Compiler (cl.exe)-
+Converts human readable source code to machine readable format called .obj (object code). .c ⇒ .obj
+ Example of object code format : COFF (Common Object File Format)
+ 
+Linker (link.exe)- 
+Converts machine understandable code to Operating System (OS) understandable format. .obj ⇒ .exe
+Linker adds a primary header to the object code file. 
+Primary Header:
+Magic number. For Windows magic number ⇒ MZ it is short form by its inventor’s name - Mark Zbkawskbi
+Entry for entry-point function e.g. main()
+.
+.
+….. 27. 
+Linking library object code to main object code
+
+B] Header files, Packages, Namespaces
+
+C] Libraries
+
+D] Documentation
+
+E] Runtime environments
+For Java ⇒ JVM 
+Javascript ⇒ WinJS (Chakra)
+.NET ⇒ CLR 
+
+F] IDE (Integrated Development Environment)
+
+==============================================================================================================
+L004 : 23 April 2023
+
+==============================================================================================================
+L005 : 29 April 2023
+
+Native development: (Where performance, fastest response in minimum amount of time is of utmost importance)
+ - OS dev
+ - System programming
+ - Graphics 
+ - Game 
+ - Audio Video
+ - Digital Signal processing
+ - Image Processing
+ - Embedded systems, RTOS, mission critical
+
+ VM Based development (Where performance, fast response are not mandatory):
+ - Internet browsing
+ - Scripting
+
+Six Technologies we are going to learn:
+1. Windows - OpenGL + DirectX
+2. Linux - OpenGL
+3. Android - OpenGL ES
+4. Web - OpenGL ES
+5. macOS - OpenGL
+6. iOS - OpenGL ES
+
+Software Development:
+Every OS comes with SDK to facilitate software/tool development. Its known as native SDK.
+
+SDKs for OpenGL based software development:
+Windows: 
+H/W -> Windows OS -> Native SDK (Win32 SDK) : We are going to learn OpenGL development using Win32 SDK
+H/W -> Windows OS -> Native SDK (Win32 SDK) -> Microsoft Foundation Classes (MFC)
+H/W -> Windows OS -> Native SDK (Win32 SDK) -> Microsoft Foundation Classes (MFC) -> .Net
+H/W -> Windows OS -> Native SDK (Win32 SDK) -> Microsoft Foundation Classes (MFC) -> .Net -> 
+	Scripting (1. Web - WebGL 2. Python - PyGL)
+
+Linux:
+H/W -> Linux OS -> XLib SDK : We are going to learn OpenGL development using XLib SDK
+H/W -> Linux OS -> XLib SDK -> GDK/GTK/Qt
+H/W -> Linux OS -> XLib SDK -> GDK/GTK/Qt -> Java
+H/W -> Linux OS -> XLib SDK -> GDK/GTK/Qt -> Java -> Scripting (1. Web - WebGL 2. Python - PyGL)
+
+	Framework: Frameworks are made for faster development
+	Examples - 
+	Qt, freeglut, MFC, .Net
+
+Android:
+H/W -> Linux OS -> Androdized Linux (Android)
+H/W -> Linux OS -> Android -> NDK (Native development Kit using C/C++)
+H/W -> Linux OS -> Android -> NDK -> Android SDK(Its a native framework, development using Java)
+
+JVM runs Java program. Java as a language is not slow. 
+The program written in Java runs on JVM and JVM is virtual hence it is slow. 
+But in Android, Java program runs on Dalvik which is faster than JVM.
+Dalvik is similar to LLVM (Low Level Virtual Machine), whereas JVM is similar to HLVM (High Level Virtual Machine).
+Hence Java programs/Games in Android are not slow.
+
+Android NDK examples:
+1. Vulcan
+2. OpenCL (Open Computing Language)
+3. CUDA 
+4. Android based DirectX wrapper
+5. Compute shedder from OpenGL
+
+macOS:
+H/W -> macOS -> Cocoa SDK (Swift, Objective-C)
+H/W -> macOS -> Cocoa SDK -> Swift UI, COCOS SDK etc -> Java
+
+iOS:
+H/W -> iOS -> Coco touch SDK (Objective-C)
+
+WebGL:
+H/W -> OS -> COM -> WinJs(Windows JavaScript) -> Browser -> Javascript (WebGL programming based on OpenGL-ES)
+
+
+
+QA:
+1. How to create Games?
+Learn rendering technology - 
+	OpenGL, DirectX, Vulcan, Metal
+	A]	Directly create game
+	B] Game Engine
+		1. Using UI
+		2. Scripting
+			1. Engine Script , example - MEL (Maya Embedding Language), MaxScript
+			2. Common Programming Language, example - C++, C#, Python
+==============================================================================================================
+L006 : 30 April 2023
+
+
+==============================================================================================================
+L007 : 06 May 2023
+
+==============================================================================================================
+L008 : 07 May 2023
+
