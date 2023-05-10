@@ -116,22 +116,74 @@ H/W -> OS -> COM -> WinJs(Windows JavaScript) -> Browser -> Javascript (WebGL pr
 
 
 QA:
-1. How to create Games?
-Learn rendering technology - 
-	OpenGL, DirectX, Vulcan, Metal
-	A]	Directly create game
-	B] Game Engine
-		1. Using UI
-		2. Scripting
-			1. Engine Script , example - MEL (Maya Embedding Language), MaxScript
-			2. Common Programming Language, example - C++, C#, Python
+Q1. How to create Games?
+Learn rendering technology - OpenGL, DirectX, Vulcan, Metal
+	A] Directly create game using C, C++, Objective-C, Java etc
+	B] Game Engine (Examples - Unreal, Unity, Cry, Unigine, XNA etc) and 
+		or Design Softwares (Examples - MAYA, 3dsMax, Udiny, Nuke, zBrush, Auto-CAD)
+		1. Using UI (Drag and Drop)
+		2. Scripting Languages
+			1. Engine Specific Scripting Languages; Example - MEL (Maya Embedding Language), MaxScript
+			2. Common Programming Language, example - C++(Unreal, Unigine, Crytech), C#(Unity, XNA), Python
+				Here C++ is not compiled, it is used as scripting language.
+
+C# is touch faster than Java because Java is interpreted and C# is compiled language.
 =============================================================================================================================
 L006 : 30 April 2023
 
+How Virtual Machine Development works:
+1. Source code -> Compile(From Human understandable to VM understandable format) -> VM (JVM/CLR) -> 
+Compile (From VM understandable to Real Machine understandable format) -> CPU
 
+2. Source code (Scripting languages MEL, Maxscript, C++, C#, Python etc) -> VM -> Compile(JIT) -> CPU
+
+Compiler (Code to VM): It is a static compiler
+
+Compiler (VM to CPU): It is a runtime compiler also known as JIT (Just In Time) compiler.
+	This is applicable to Java, C# and all the scripting languages.
+
+Trivia:
+Which scripting language is a compiled and does not need VM to run? It is not interprted.
+XAML (eXtended Application Markup Language)
+
+
+OpenGL and Direct3D are realtime rendering technology.
+			
+	|	  | Metal (Apple) - 2014	|
+	|	  | Vulkan - 2016			| OpenGL
+H/W | OS  |							|
+	|	  | Direct3D 12 - 2015		| Direct3D 11
+	|	  | Ray Tracing - 2018		|
+
+Ray tracing in
+- Metal : MPS (Metal Performance Shedder)
+- VKRay : Vulkan Ray Tracing
+- DXR	: DirectX Ray Tracing
+
+Why Ray Tracing came into existence?
+- Because of PBRT (Physically Based Rendering Technology)
+
+AR - Augmented Reality
+VR - Virtual Reality
+MR - Mixed Reality = AR + VR
+
+For Maximum reality Ray Tracing is introduced and 
+for maximum performance mutithreading was introduced in to - Metal, Vulkan etc
+
+# Graphic Card -> Deice Driver(Part of OS) -> OpenGL / Direct3D 11
+For maximum performance and reality (AR, VR, MR), graphic card driver was cut in to different part
+1. Lowest level driver 2. Higher level driver (Technologies - Metal, Vulkan, Direct3D 12)
+
+# Graphic Card -> Deice Driver(Lowest level) -> Metal/Vulkan/Direct3D 12 -> OpenGL/Direct3D 11
+
+# Graphic Card -> Deice Driver(Lowest level) -> Ray Tracing | Metal/Vulkan/Direct3D 12 -> OpenGL/Direct3D 11
 =============================================================================================================================
 L007 : 06 May 2023
 
+Lecture about
+- Which and how to watch movies.
+- Which and how to read literature.
+- Which and how to listen to music.
 =============================================================================================================================
 L008 : 07 May 2023
 
