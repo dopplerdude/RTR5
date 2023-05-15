@@ -1,6 +1,6 @@
 // Header files
-#include <GL/freeglut.h>
-
+#include<GL/freeglut.h>
+#include<freeglut.h>
 // Global variable declarations
 bool bIsFullScreen = false;
 

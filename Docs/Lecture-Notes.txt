@@ -1,11 +1,31 @@
 16 April 2023:
 First triangle program practice done.
 
+Compile command:
+cl.exe /c /EHsc /I C:\freeglut\include OGL.cpp
+
+Linking Command:
+link.exe OGL.obj /LIBPATH:C:\freeglut\lib\x64 /SUBSYSTEM:CONSOLE
+
 =============================================================================================================================
 L003 : 22 April 2023
 
 Group leaders got assigned project
 
+=============================================================================================================================
+L004 : 23 April 2023
+
+SDK (Software Development Kit):
+A] Toolchain : Compiler, Linker/Interpreter, Loader, assembler, disassembler, debugger
+B] Header files/Packages/Namespaces
+C] API Libraries
+D] Documentation
+----------------------------------
+E] Runtime Environment (RE) / VM
+F] IDE (Integrated Development Environment)
+
+Compulsory A, B, C and D are compulsory.
+ 
 SDK (Software Development Kit):
 A] Toolchain : Compiler, Linker/Interpreter, Loader, assembler, disassembler, debugger
 Compiler (cl.exe)-
@@ -23,9 +43,11 @@ Entry for entry-point function e.g. main()
 ….. 27. 
 Linking library object code to main object code
 
-B] Header files, Packages, Namespaces
+B] Header files/Packages/Namespaces
 
-C] Libraries
+C] API Libraries
+ - Procedural
+ - Object Oriented
 
 D] Documentation
 
@@ -36,8 +58,6 @@ Javascript ⇒ WinJS (Chakra)
 
 F] IDE (Integrated Development Environment)
 
-=============================================================================================================================
-L004 : 23 April 2023
 
 =============================================================================================================================
 L005 : 29 April 2023
@@ -187,3 +207,423 @@ Lecture about
 =============================================================================================================================
 L008 : 07 May 2023
 
+Group members, group leaders and group names are formed today.
+27 groups formed.
+My group details:
+Group name: Compute
+Group leader: Rutu Chougule
+=============================================================================================================================
+L009 : 11 May 2023	(C - Pradnya )
+
+Reference: Tweaked Smileys"" will need understanding of representation of digits(0-9) as number/value and 
+			as ASCII characters.
+
+Homework:
+H1. Decimal to Binary conversion of 0 to 15 numbers in 8-bit format.
+H2. Write your name in 8-bit binary format.
+
+=============================================================================================================================
+L010 : 12 May 2023	(C - Pradnya )
+
+Assignment 1 - Hello World
+
+Variables and Constants:
+
+Syntax:
+
+(1) <data types> <identifier name> 
+
+(2) <data types> <identifier name> = <value> ;
+
+Identifier name:
+	- should conntain alphabets
+	- name can not start with a number
+	- name can start with '_'
+	- space is not allowed in identifier name
+	- identifier name can be maximum 32 character
+
+
+int num = 5;
+int num1 = 10, num2 = 20, num3 = 30;
+printf("Num is = %d", num);
+
+sizeof() gives how many bytes are given to a value of a data type.
+
+float data type - Single precision floating point value
+float f;	// declaration
+float f1 = 3.14f; // declaration + initialization(inline initialization)
+printf("f is = %f",f1);
+
+double d; // double precision floating pointer values
+d = 1.145444;
+double d1 = 3.1415965
+printf("d is = %lf", d1);
+printf("d is = %g"", d);
+
+unsigned int uNum = 33"
+printf("uiNum is = %u", uNum);
+
+long L = 313133L;
+printf("L = %ldl");
+
+unsigned long => %u
+
+long double ld = 1.343434;
+
+char c;
+c = 'A';
+char ch = 'P';
+printf("ch is = %c", ch );
+
+float f = 4312.2161712;
+%4.4f = 4312.2162
+
+String formatting:
+Escape sequence:
+\n = new line
+\t = tab (spaces)
+\b = backspace
+\r = Carriage return
+\ooo = print octal value
+\xhh = print hrxadecimal
+
+Escape sequence will be used in shedders.
+
+printf("My name is \"Batman\"\n"); => My name is "Batman"
+
+=============================================================================================================================
+L011 : 13 May 2023	(C - Pradnya )
+
+Constants:
+1. const
+2. enum
+3. #define
+4. Directly used constant (example x = 2; here 2 is constant)
+
+1. const
+syntax
+const <data type> <identifier name> = <value>;
+
+const is a type qualifier
+
+2. #define
+#define <IDENTIFIER NAME> <value>
+These are called symbolic constants
+
+3. enum
+Vertex attribute will use enum.
+
+4. Directly used constants
+When we use	a value directly in C program without creating a variable, it is known as a Literal.
+And these literals are a fixed value hence known as Literal constants.
+
+Operators:
+1. Arithmetic (Unary and Binary)
+2. Relational (Binary)
+3. Logical (Unary and Binary)
+4. Bitwise (Unary and Binary)
+
+1. Arithmetic operators:
+- Basic (Binary):
++, -, *, /, %, =
+Associativity:
++ left to right
+- left to right
+* left to right
+/ left to right
+% left to right
+= right to left
+
+c = a + b;
+It read as "a plus b is assigned to c".
+
+* and - are unary and binary based on number of operands.
+b = -c;
+b = *p;
+
+% works on integer operands only
+
+- Compound assignment (Binary):
++=, -=, *=, /=, %=
+
+Associativity
++= right to left 
+-= right to left 
+*= right to left 
+/= right to left 
+%= right to left 
+
+Precedence: BODMAS
+2 * 3 + 4 = 10
+2 * (3 + 4) = 14
+Refer Dennis Ritchie C programming book for precedence table.
+
+
+- Increment / decrement (Unary):
+++, --
+postfix :
+a++, c--
+
+prefix:
+++a, --c
+associativity : 
+
+2. Relational (Binary)
+<, >, <=, >=, !=, ==
+
+associativity : left to right
+
+3. Logical (Unary and Binary)
+- Binary Logical operators
+&& (Logical AND), || (Logical OR) : Left to Right
+
+- Unary Logical Operator
+! (logical Not) : Right to Left
+
+=============================================================================================================================
+L012 : 14 May 2023	(C - Pradnya )
+
+Marathi movies:
+Directors:
+Dadasaheb Phalke
+
+V Shantaram:
+1. 
+
+Maratha Tituka Melvava
+Tambadi Mati
+Ganimi Kawa
+Bal Shivaji
+
+Anant Mane
+- Sangate Aika
+
+Master Vinayak
+- Bramhachari
+
+Rajdatta
+- Shapit
+- Pudhacha Paul
+- Maficha Sakshidar
+
+Jabbar Patel
+- Sinhasan
+- Samna
+- Umbaratha
+- Jait Re Jait
+
+Dada Kondake
+- Songadya
+- Andhala Marto Dola
+- Tumcha Amcha Jamala
+- Pandu Hawaldar
+
+Sachin
+- Atmavishwas
+- Gammat Jammat
+- Maza pati Karodpati
+- Ashi hi Banava Banvi
+- Ashtavinayak
+- Ekapeksha Ek
+
+Mahesh Kothare
+- Dhumdhadaka
+- Zapatlela
+- Pachhadlela
+
+
+Arun Sadhu (Writer)
+ - Sinhasan
+ - Mumbai Dinank
+
+Hindi Directors:
+Gurudatta
+- Pyaasa
+- Kaagaz ke phul
+- Sahab Biwi aur
+
+Bimal Roy
+- Do bigha jameen
+- Pareeniti
+- Bandini
+- Sujata
+- Dewdas
+- Madhumati
+- Parakh
+
+Raj Kapoor
+- Aag
+- Aah
+- Awara
+- Barsat
+- 
+
+Mehboob Khan
+- Andaaz
+- Mother India
+- Amar
+
+K Asif
+- Mughal E Azam
+- 
+
+Satyajit Ray
+- The Apu triology
+- Charulata
+- Pather panchali
+- Shataranj ke khel
+
+Ritwik ghatak
+- Meghe dhaka taara
+- Komal ghanghar
+
+Mrinal Sen
+- Bhuvan shome
+- Mrigayaa
+- Tahader katha
+
+Aparna Sen
+- Train to Pakistan
+- 36 Chowringhee Lane
+
+Kedar Sharma
+- Neelkamal
+- Jogan
+
+Kamal Amru
+- Pakeezah
+- Razia Sultan
+
+Amiya Chakravarty
+- Daag
+- Footpath
+- Patita
+- Tarana
+
+Hrishikesh Mukherjee
+- Anari
+- Musafir
+- Anupama
+- Golmal
+- Mili
+- Anand
+- Bawarchi
+- Chupake chupake
+- Bemisal
+- Namak Haram
+
+Gulzar
+- Mera aap
+- Aandhi
+- Kitab
+- Kinara
+- Khushaboo
+- Koshish
+- Achanak
+- Maachis
+- Lekin
+- Ijajat
+
+Gitrish Karnad
+- Utsav
+
+B R Chopra
+- Kanoon
+- Naya Daur
+- Gumrah
+
+Yash Chopra
+- Waqt
+- Deewar
+- Trishul
+- Kala Patthar
+- Silsila
+- Mashal
+
+Vijay Anand
+- Taxi Driver
+- Kala Bazar
+- Tere Ghar Ke Samne
+- Guide
+- Tisari Manjil
+- Tere Mere Sapne
+- Jewel thief
+
+Ramesh Sippi
+- Sholay
+- Shakti
+- Sita aur Gita
+- Sagar
+- Buniyad (Serial)
+
+Prakash Mehra
+- Janjeer
+
+Manmohan Desai
+- Kanhaiyya
+
+Subhash Ghai
+- Karma
+- Saudagar
+- Karj
+
+Chandra Barot 
+- Don
+
+Govind Nihalani
+- Ardah Satya
+- Droh kaal
+- Deham
+- Tamas (Serial)
+
+Shyam Benegal
+- Kaliyug
+- Nishant
+- Kondura
+- Zubeidaa
+- Ankur
+- Mandi
+- Bharat Ek Khoj
+
+Mahesh Bhatt
+- Saaransh
+- Arth
+- Naam
+
+Shekhar Kapoor
+- Masoom
+- Mr India
+- Bandit Queen
+
+Ram Gopal Varma
+- Raat
+- Shiva
+- Rangeela
+
+Vishal Bharadwaj
+- Maqbool
+- Omkaara
+- Haider
+- 
+
+Sanjay Leela Bhansali
+- Savariya
+- Black
+
+Maniratnam
+- Swathi Muthyam
+- Mahanadi
+- Thevar Magan
+- Satya
+- Roja
+- Bombay
+
+Balu Mahendra
+- Sadma
+
+Adoor gopalkrishnan
+- Swaymwarm
+
+Singeetam Srinivasa Rao
+- Pushpak
+- Mumbai Express

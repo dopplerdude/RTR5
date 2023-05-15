@@ -18,4 +18,6 @@ NDK:	Native Development Kit -> Used for Android S/W Dev
 LLVM:	Low Level Virtual Machine -> Example - Dalvik (Android)
 HLVM:	High Level Virtual Machine -> Example - JVM
 OpenCL:	Open Computing Language
-CUDA:	
+CUDA:	Compute Unified Device Architecture	
+EHsc:	Exception Handling synchronous catch
+BASIC:  Beginner's Allpurpose Symbolic Instruction Code
